@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: "development"
+
+---
+spring:
+  profiles: "development"
+
+---
+spring:
+  profiles: "production"
+
+---
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/traderslog_db
+    username: tdl_user
+    password: tdl_password2018_
+
+#entitymanager:
+#  packagesToScan:
