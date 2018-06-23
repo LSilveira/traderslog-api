@@ -8,9 +8,9 @@ Script Type:  Create database structure
 - TL_VERSION :: CREATE
 -------------------------------------------------------------------------------
 CREATE TABLE TL_VERSION(
-    VERSION VARCHAR2(20) PRIMARY KEY,
-    DATE_TIME TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    DESCRIPTION VARCHAR2(255)
+    VERSION VARCHAR2(20) PRIMARY KEY COMMENT 'Script version',
+    DATE_TIME TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL COMMENT 'Script creation date',
+    DESCRIPTION VARCHAR2(255) COMMENT 'Script description'
 );
 
 -------------------------------------------------------------------------------
